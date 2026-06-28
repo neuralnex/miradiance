@@ -20,9 +20,6 @@ function App() {
       <section className="relative w-full bg-black min-h-[100svh]">
         <HeroCanvas />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8 mx-auto max-w-4xl">
-          <p className="text-white text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-6">
-            Luxury Perfumes & Skincare Wholesale and Retail
-          </p>
           <h1
             className="font-serif text-white uppercase"
             style={{

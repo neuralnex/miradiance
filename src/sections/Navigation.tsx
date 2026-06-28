@@ -37,16 +37,15 @@ export default function Navigation() {
       style={{ height: '5.5rem' }}
     >
       <div className="flex h-full items-center justify-between px-4 sm:px-6">
-        <div className="flex items-center gap-4">
-          <span className="text-white font-sans uppercase tracking-[0.3em] text-sm sm:text-base">
-            Miradiance
-          </span>
-        </div>
+        <span className="text-white font-sans uppercase tracking-[0.3em] text-sm sm:text-base">
+          Miradiance
+        </span>
 
         <button
           type="button"
-          className="sm:hidden flex flex-col justify-center gap-1.5 p-2 text-white focus:outline-none"
+          className="flex flex-col justify-center gap-1.5 p-2 text-white focus:outline-none"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen((current) => !current)}
         >
           <span
@@ -65,27 +64,10 @@ export default function Navigation() {
             }`}
           />
         </button>
-
-        <div className="hidden sm:flex w-full justify-center">
-          <div className="flex items-center gap-4 sm:gap-6 md:gap-8 overflow-x-auto">
-            {navLinks.map((link) => (
-              <button
-                key={link}
-                onClick={() => scrollToSection(link)}
-                className="text-white text-[0.65rem] sm:text-xs md:text-sm font-sans uppercase tracking-[0.2em] hover:text-[#c58c5a] transition-colors duration-300 relative group"
-              >
-                {link}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#c58c5a] transition-all duration-300 group-hover:w-full" />
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="hidden sm:block w-6" />
       </div>
 
       {menuOpen && (
-        <div className="sm:hidden absolute inset-x-0 top-full bg-black/95 border-t border-white/10 text-center py-4">
+        <div className="absolute inset-x-0 top-full bg-black/95 border-t border-white/10 text-center py-4">
           <div className="flex flex-col items-center gap-4">
             {navLinks.map((link) => (
               <button
