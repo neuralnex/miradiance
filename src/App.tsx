@@ -19,7 +19,7 @@ function App() {
       {/* Hero Section */}
       <section className="relative w-full bg-black min-h-[100svh]">
         <HeroCanvas />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8 mx-auto max-w-4xl">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100svh-5.5rem)] pt-24 pb-12 text-center px-4 sm:px-8 mx-auto max-w-4xl">
           <h1
             className="font-serif text-white uppercase"
             style={{

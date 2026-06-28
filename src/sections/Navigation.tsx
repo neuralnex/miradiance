@@ -37,7 +37,7 @@ export default function Navigation() {
       style={{ height: '5.5rem' }}
     >
       <div className="flex h-full items-center justify-between px-4 sm:px-6">
-        <span className="text-white font-sans uppercase tracking-[0.3em] text-sm sm:text-base">
+        <span className="text-white font-sans uppercase tracking-[0.3em] text-sm sm:text-base truncate">
           Miradiance
         </span>
 
