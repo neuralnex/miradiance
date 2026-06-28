@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer id="wholesale" className="relative w-full bg-black text-white" style={{ paddingTop: '128px', paddingBottom: '64px' }}>
-      <div className="max-w-7xl mx-auto px-8 md:px-16">
+    <footer id="wholesale" className="relative w-full bg-black text-white py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
           <div>
             <h2

@@ -17,24 +17,24 @@ function App() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative w-full bg-black" style={{ height: '100svh' }}>
+      <section className="relative w-full bg-black min-h-[100svh]">
         <HeroCanvas />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8 mx-auto max-w-4xl">
           <p className="text-white text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-6">
             Luxury Perfumes & Skincare Wholesale and Retail
           </p>
           <h1
             className="font-serif text-white uppercase"
             style={{
-              fontSize: 'clamp(4rem, 12vw, 8rem)',
-              lineHeight: 0.8,
+              fontSize: 'clamp(3rem, 12vw, 6rem)',
+              lineHeight: 0.9,
               letterSpacing: '-0.02em',
             }}
           >
             Miradiance
           </h1>
           <button
-            className="mt-10 px-8 py-3 border border-white text-white text-sm uppercase tracking-[0.15em] font-sans bg-transparent hover:bg-white hover:text-black transition-all duration-300"
+            className="mt-10 w-full sm:w-auto px-6 sm:px-8 py-3 border border-white text-white text-sm uppercase tracking-[0.15em] font-sans bg-transparent hover:bg-white hover:text-black transition-all duration-300"
             onClick={() => {
               document.getElementById('perfumes')?.scrollIntoView({ behavior: 'smooth' });
             }}

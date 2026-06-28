@@ -29,10 +29,9 @@ export default function Lookbook() {
     <section
       ref={sectionRef}
       id="lookbook"
-      className="relative w-full bg-white"
-      style={{ paddingTop: '128px', paddingBottom: '128px' }}
+      className="relative w-full bg-white py-20 sm:py-28"
     >
-      <div className="max-w-7xl mx-auto px-8 md:px-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="mb-16">
           <h2
             className="font-serif text-black"
@@ -45,11 +44,11 @@ export default function Lookbook() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
           {/* Large featured image - spans 2 cols, 2 rows */}
           <div
             ref={(el) => { imagesRef.current[0] = el; }}
-            className="col-span-2 row-span-2 relative overflow-hidden group"
+            className="col-span-1 md:col-span-2 md:row-span-2 relative overflow-hidden group"
             style={{
               opacity: 0,
               transform: 'scale(0.95)',
@@ -74,7 +73,7 @@ export default function Lookbook() {
           {/* Tall image */}
           <div
             ref={(el) => { imagesRef.current[1] = el; }}
-            className="col-span-1 row-span-2 relative overflow-hidden group"
+            className="col-span-1 md:row-span-2 relative overflow-hidden group"
             style={{
               opacity: 0,
               transform: 'scale(0.95)',

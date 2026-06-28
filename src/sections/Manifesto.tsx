@@ -28,10 +28,9 @@ export default function Manifesto() {
     <section
       ref={sectionRef}
       id="about"
-      className="relative w-full bg-black text-white"
-      style={{ paddingTop: '128px', paddingBottom: '128px' }}
+      className="relative w-full bg-black text-white py-20 sm:py-28"
     >
-      <div className="max-w-7xl mx-auto px-8 md:px-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8">
         <p
           ref={textRef}
           className="font-serif uppercase leading-[1.1] opacity-0 translate-y-8 transition-all duration-1000 ease-out"

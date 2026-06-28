@@ -37,11 +37,11 @@ export default function Marquee() {
         }
         .marquee-item {
           font-family: 'Inter', sans-serif;
-          font-size: clamp(3rem, 8vw, 8rem);
+          font-size: clamp(1.5rem, 5vw, 4rem);
           text-transform: uppercase;
           color: #000;
           white-space: nowrap;
-          padding-right: 2rem;
+          padding-right: 1rem;
           letter-spacing: -0.02em;
           font-weight: 700;
         }

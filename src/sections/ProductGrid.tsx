@@ -52,8 +52,8 @@ export default function ProductGrid() {
   }, []);
 
   return (
-    <section className="relative w-full bg-white" style={{ paddingTop: '128px', paddingBottom: '128px' }}>
-      <div className="max-w-7xl mx-auto px-8 md:px-16">
+    <section className="relative w-full bg-white py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="mb-16">
           <h2
             className="font-serif text-black"
@@ -66,7 +66,7 @@ export default function ProductGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {products.map((product, i) => (
             <div
               key={i}
@@ -78,7 +78,7 @@ export default function ProductGrid() {
                 transition: `all 0.8s ease-out ${i * 0.15}s`,
               }}
             >
-              <div className="relative overflow-hidden" style={{ aspectRatio: '3/4' }}>
+              <div className="relative overflow-hidden aspect-[3/4]" style={{ aspectRatio: '3/4' }}>
                 <img
                   src={product.image}
                   alt={product.name}
